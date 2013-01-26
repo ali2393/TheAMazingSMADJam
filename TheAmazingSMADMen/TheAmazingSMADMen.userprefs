@@ -1,9 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\sCharacterController.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Change_Colour.js">
     <Files>
       <File FileName="Assets\Scripts\sRoofMagic.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\sCharacterController.js" Line="36" Column="29" />
+      <File FileName="Assets\Scripts\Health.js" Line="16" Column="1" />
+      <File FileName="Assets\Scripts\sConsume.js" Line="13" Column="1" />
+      <File FileName="Assets\Scripts\Change_Colour.js" Line="19" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
