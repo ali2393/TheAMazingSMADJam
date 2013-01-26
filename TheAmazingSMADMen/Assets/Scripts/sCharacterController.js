@@ -3,6 +3,8 @@ var yDepth : float = 1;
 
 var step : GameObject;
 
+//var ani:GameObject;
+
 var stepback : GameObject;
 
 var RunSpeed : int = 2;
@@ -22,6 +24,8 @@ function Update ()
 	{
 		transform.Translate(Vector3.forward * Time.deltaTime * RunSpeed);
 		
+		//ani.GetComponent.Animation2D.StartAnimation();
+		
 		if (!step.audio.isPlaying)
 		{
 			step.audio.Play();
@@ -35,6 +39,8 @@ function Update ()
 	if (Input.GetKey("s"))
 	{
 		transform.Translate(Vector3.forward * Time.deltaTime*-1 * RunSpeed);
+		
+		
 		
 		if (!stepback.audio.isPlaying)
 		{
