@@ -5,6 +5,10 @@ var step : GameObject;
 
 var stepback : GameObject;
 
+var RunSpeed : int = 2;
+
+var RotationalSpeed : int =3;
+
 //var consumed : float = 0;
  
 function Start () 
@@ -16,7 +20,7 @@ function Update ()
 {
 	if (Input.GetKey("w"))
 	{
-		transform.Translate(Vector3.forward * Time.deltaTime);
+		transform.Translate(Vector3.forward * Time.deltaTime * RunSpeed);
 		
 		if (!step.audio.isPlaying)
 		{
@@ -30,7 +34,7 @@ function Update ()
 	
 	if (Input.GetKey("s"))
 	{
-		transform.Translate(Vector3.forward * Time.deltaTime*-1);
+		transform.Translate(Vector3.forward * Time.deltaTime*-1 * RunSpeed);
 		
 		if (!stepback.audio.isPlaying)
 		{
@@ -44,12 +48,12 @@ function Update ()
 	
 	if (Input.GetKey("d"))
 	{
-		transform.Rotate(transform.up*Time.deltaTime*10);
+		transform.Rotate(transform.up*Time.deltaTime*10 * RotationalSpeed);
 	}
 	
 	if (Input.GetKey("a"))
 	{
-		transform.Rotate(transform.up * Time.deltaTime*-10);
+		transform.Rotate(transform.up * Time.deltaTime*-10 * RotationalSpeed);
 	}
 	
 	transform.position.y= yDepth;;

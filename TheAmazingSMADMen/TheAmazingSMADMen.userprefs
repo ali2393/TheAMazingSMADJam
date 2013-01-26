@@ -1,13 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\sCharacterController.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\sRandomSpawn.js">
     <Files>
+      <File FileName="Assets\Scripts\sRandomSpawn.js" Line="147" Column="72" />
+      <File FileName="Assets\Scripts\sCharacterController.js" Line="10" Column="28" />
       <File FileName="Assets\Scripts\Movement.cs" Line="27" Column="1" />
       <File FileName="Assets\Scripts\sRoofMagic.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Health.js" Line="16" Column="1" />
       <File FileName="Assets\Scripts\sConsume.js" Line="22" Column="32" />
       <File FileName="Assets\Scripts\Change_Colour.js" Line="45" Column="17" />
-      <File FileName="Assets\Scripts\sCharacterController.js" Line="25" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

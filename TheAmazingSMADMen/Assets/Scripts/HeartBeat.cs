@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 [RequireComponent(typeof(AudioSource))]
-public class Movement : MonoBehaviour {
+public class HeartBeat : MonoBehaviour {
 	
 	
 	public AudioClip heart;
