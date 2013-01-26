@@ -1,5 +1,5 @@
 #pragma strict
-
+@script RequireComponent(AudioSource)
 function Start () {
 
 }
@@ -12,12 +12,16 @@ var color1 : Color = Color.yellow;
 var color2 : Color = Color.green;
 var color3 : Color = Color.black;
 
+var Giggle: GameObject;
+
 function Update () {
     
     health = health - currentTime;
 	
 	if(health<=100 && health >70)
 	{
+		Giggle.audio.Stop();
+		audio.Stop();
 		light.color=color0;
 	}
 	
@@ -34,9 +38,19 @@ function Update () {
     }
     
     if (health <= 10 && health >0){
-    //var s : float = Mathf.PingPong (Time.time, duration) / duration;    
-    //light.color = Color.Lerp (color2, color3,s);
-    light.color=color3;
+    	//var s : float = Mathf.PingPong (Time.time, duration) / duration;    
+    	//light.color = Color.Lerp (color2, color3,s);
+    	light.color=color3;
+    	
+    	if (!Giggle.audio.isPlaying)
+		{
+    	Giggle.audio.Play();
+    	}
+	}
+	
+	if(health<= 40 && health>0 && !audio.isPlaying)
+	{
+		audio.Play();
 	}
 	
 	if (health <= 0){

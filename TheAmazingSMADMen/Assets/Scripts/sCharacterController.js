@@ -1,10 +1,15 @@
 #pragma strict
 var yDepth : float = 1;
+
+var step : GameObject;
+
+var stepback : GameObject;
+
 //var consumed : float = 0;
  
 function Start () 
 {
-	//guiText.text = "Helpless Consumed : " + consumed;
+	
 }
 
 function Update () 
@@ -12,18 +17,37 @@ function Update ()
 	if (Input.GetKey("w"))
 	{
 		transform.Translate(Vector3.forward * Time.deltaTime);
+		
+		if (!step.audio.isPlaying)
+		{
+			step.audio.Play();
+		}
+	}
+	else
+	{
+		step.audio.Stop();
 	}
 	
 	if (Input.GetKey("s"))
 	{
 		transform.Translate(Vector3.forward * Time.deltaTime*-1);
+		
+		if (!stepback.audio.isPlaying)
+		{
+			stepback.audio.Play();
+		}
+	}
+	else
+	{
+		stepback.audio.Stop();
 	}
 	
 	if (Input.GetKey("d"))
 	{
 		transform.Rotate(transform.up*Time.deltaTime*10);
 	}
-	else if (Input.GetKey("a"))
+	
+	if (Input.GetKey("a"))
 	{
 		transform.Rotate(transform.up * Time.deltaTime*-10);
 	}
