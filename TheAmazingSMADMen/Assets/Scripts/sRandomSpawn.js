@@ -19,10 +19,10 @@ function Start ()
 function Update () 
 {
 
-	while(spawnCounter < 3)
+	while(spawnCounter < 5)
 	{
 		
-		spawnPoint=Random.Range(0,21);
+		spawnPoint=Random.Range(0,5);
 	
 			if (spawnPoint==1)
 			{

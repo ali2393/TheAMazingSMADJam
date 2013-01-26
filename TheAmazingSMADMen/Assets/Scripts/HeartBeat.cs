@@ -7,11 +7,31 @@ public class HeartBeat : MonoBehaviour {
 	
 	public AudioClip heart;
 	public AudioClip heartFast;
-	public GameObject prey;
 	
 	public float audioFarDistance = 15.0f;
 	public float audioNearDistance = 6.0f;
-	private float distance;
+	
+	float distance = Mathf.Infinity;
+	GameObject closest;
+	
+	GameObject FindClosestEnemy()
+	{
+		GameObject[] prey;
+		prey = GameObject.FindGameObjectsWithTag("Food");
+		Vector3 characterPos = transform.position;
+		
+		foreach (GameObject p in prey)
+		{
+			Vector3 differenceBetweeen = p.transform.position - characterPos;
+			float curDistance = differenceBetweeen.sqrMagnitude;
+			if(curDistance < distance)
+			{
+				closest = p;
+				distance = curDistance;
+			}
+		}
+		return closest;
+	}
 	
 	
 	// Use this for initialization
@@ -22,11 +42,10 @@ public class HeartBeat : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		prey = GameObject.FindGameObjectWithTag("Food");
+		FindClosestEnemy();
 		
-		distance = Vector3.Distance(prey.transform.position, transform.position);
+		print(FindClosestEnemy().name);
 		
-		print(distance);
 		if(distance < audioNearDistance && audio.clip != heartFast)
 		{
 			audio.clip=heartFast;
