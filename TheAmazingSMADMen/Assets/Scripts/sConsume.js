@@ -5,10 +5,13 @@ var pHealth :Health;
 
 var lHealth :Change_Colour;
 
+var ereset:sRandomSpawn;
+
 function Start () 
 {
 	pHealth=GetComponent("Health");
 	lHealth=GameObject.Find("Spotlight").GetComponent("Change_Colour");
+	ereset=GameObject.Find("Main Camera").GetComponent("sRandomSpawn");
 }
 
 function Update () 
@@ -23,6 +26,7 @@ function OnTriggerEnter (other : Collider)
    		consumed ++;  
    		pHealth.Heal();
    		lHealth.Heal();
+   		ereset.Reset();
     }
 }	
 

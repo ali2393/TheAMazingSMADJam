@@ -19,7 +19,7 @@ function Start ()
 function Update () 
 {
 
-	while(spawnCounter < 5)
+	while(spawnCounter < 1)
 	{
 		
 		spawnPoint=Random.Range(0,5);
@@ -153,6 +153,11 @@ function Update ()
 		}
 	
 
+}
+
+function Reset()
+{
+	spawnCounter=0;
 }
 
 function RandomSpawn()
