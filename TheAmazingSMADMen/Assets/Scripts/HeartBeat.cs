@@ -8,8 +8,8 @@ public class HeartBeat : MonoBehaviour {
 	public AudioClip heart;
 	public AudioClip heartFast;
 	
-	public float audioFarDistance = 15.0f;
-	public float audioNearDistance = 6.0f;
+	public float audioFarDistance = 40.0f;
+	public float audioNearDistance = 20.0f;
 	
 	float distance = Mathf.Infinity;
 	GameObject closest;

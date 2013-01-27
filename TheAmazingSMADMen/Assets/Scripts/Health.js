@@ -9,7 +9,7 @@ health = health - currentTime;
 
 if (health <= 0)
 {
-	Destroy (gameObject);
+	Application.LoadLevel("MenuScene");
 }
 }
 

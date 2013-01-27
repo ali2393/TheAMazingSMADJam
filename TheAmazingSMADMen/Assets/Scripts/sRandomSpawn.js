@@ -22,7 +22,7 @@ function Update ()
 	while(spawnCounter < 1)
 	{
 		
-		spawnPoint=Random.Range(0,5);
+		spawnPoint=Random.Range(0,21);
 	
 			if (spawnPoint==1)
 			{

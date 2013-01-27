@@ -25,25 +25,25 @@ function OnGUI() {
 		GUI.DrawTexture(Rect(0,0,Screen.width,Screen.height),menuTexture);
 		
     	GUI.skin = startSkin;
-    	if (GUI.Button(Rect(Screen.width/10 ,Screen.height/2 ,Screen.width/5,Screen.height/10)," "))
+    	if (GUI.Button(Rect(Screen.width/10 ,Screen.height/3 ,Screen.width/5,Screen.height/10)," "))
     	{
         	Application.LoadLevel("Level1");
     	}
     	
     	GUI.skin = howtoSkin;
-    	if (GUI.Button(Rect(Screen.width/10 ,Screen.height/2 + 75 ,Screen.width/5,Screen.height/10)," "))
+    	if (GUI.Button(Rect(Screen.width/10 ,Screen.height/2.75 + 75 ,Screen.width/5,Screen.height/10)," "))
     	{
         	gamestate=2;
     	}
     	
     	GUI.skin = CreditsSkin;
-    	if (GUI.Button(Rect(Screen.width/10 ,Screen.height/2 + 150 ,Screen.width/5,Screen.height/10)," "))
+    	if (GUI.Button(Rect(Screen.width/10 ,Screen.height/2.5 + 150 ,Screen.width/5,Screen.height/10)," "))
     	{
         	gamestate=3;
     	} 
     	
     	GUI.skin = exitSkin;
-    	if (GUI.Button(Rect(Screen.width/10 ,Screen.height/2 + 225 ,Screen.width/5,Screen.height/10)," "))
+    	if (GUI.Button(Rect(Screen.width/10 ,Screen.height/2.5 + 275 ,Screen.width/5,Screen.height/10)," "))
     	{
        		Application.Quit();
     	}
@@ -53,7 +53,7 @@ function OnGUI() {
     {   
     	GUI.DrawTexture(Rect(0,0,Screen.width,Screen.height),howtoTexture);
     	GUI.skin = exitSkin;
-    	if (GUI.Button(Rect(Screen.width/10 ,Screen.height/1.3 ,Screen.width/5,Screen.height/10)," "))
+    	if (GUI.Button(Rect(Screen.width/10 ,Screen.height/1.2 ,Screen.width/5,Screen.height/10)," "))
     	{
        		gamestate=1;
     	}
@@ -63,7 +63,7 @@ function OnGUI() {
     {
     	GUI.DrawTexture(Rect(0,0,Screen.width,Screen.height),creditsTexture);
     	GUI.skin = exitSkin;
-    	if (GUI.Button(Rect(Screen.width/10 ,Screen.height/1.3 ,Screen.width/5,Screen.height/10)," "))
+    	if (GUI.Button(Rect(Screen.width/10 ,Screen.height/1.2 ,Screen.width/5,Screen.height/10)," "))
     	{
        		gamestate=1;
     	}

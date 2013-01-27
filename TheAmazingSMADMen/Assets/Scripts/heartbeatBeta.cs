@@ -8,8 +8,8 @@ public class heartbeatBeta : MonoBehaviour {
 	public AudioClip heartFast;
 	public GameObject prey;
 	
-	public float audioFarDistance = 30.0f;
-	public float audioNearDistance = 10.0f;
+	public float audioFarDistance = 50.0f;
+	public float audioNearDistance = 20.0f;
 	public float distance;
 	
 	

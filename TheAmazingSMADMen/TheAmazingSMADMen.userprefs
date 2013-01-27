@@ -1,7 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MenuScript.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\sRandomSpawn.js">
     <Files>
+      <File FileName="Assets\Scripts\sRandomSpawn.js" Line="25" Column="31" />
       <File FileName="Assets\Scripts\MenuScript.js" Line="17" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
