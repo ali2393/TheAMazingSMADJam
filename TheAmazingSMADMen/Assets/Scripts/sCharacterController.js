@@ -62,12 +62,12 @@ function Update ()
 		transform.Rotate(transform.up * Time.deltaTime*-10 * RotationalSpeed);
 	}
 	
-	transform.position.y= yDepth;;
+	//transform.position.y= yDepth;
 	
-	transform.rotation.x=0;
-	transform.rotation.z=0;
+	//transform.rotation.x=0;
+	//transform.rotation.z=0;
 	
-	transform.Translate(0,0,0);
+	//transform.Translate(0,0,0);
 	
 	
 	
