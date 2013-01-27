@@ -1,11 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\sCharacterController.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MenuScript.js">
     <Files>
-      <File FileName="Assets\Scripts\sCharacterController.js" Line="6" Column="3" />
-      <File FileName="Assets\Animation\Animation2D.cs" Line="1" Column="1" />
-      <File FileName="Assets\Animation\AnimationManager.cs" Line="5" Column="2" />
-      <File FileName="Assets\Scripts\sConsume.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MenuScript.js" Line="17" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
